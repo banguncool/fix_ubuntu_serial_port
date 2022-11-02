@@ -8,7 +8,7 @@
 ## Answer
 You could try creating a [udev](https://en.wikipedia.org/wiki/Udev) rule that would create a [symbolic link](https://en.wikipedia.org/wiki/Symbolic_link) to that USB device and then you would be able to use something like /dev/myUSB that would always stay the same for that specific USB device.
 
-First, you will need to find some identifying information for the USB drive. Typing in *lsusb* should display some information that looks like:
+First, you will need to find some identifying information for the USB drive. Typing in **lsusb** should display some information that looks like:
 ```
 Bus 001 Device 004: ID 0403:6001 Future Technology Devices International
 ```
