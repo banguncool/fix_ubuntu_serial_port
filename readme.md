@@ -33,4 +33,5 @@ Solustion install make
 $ sudo apt-get update
 $ sudo apt-get install -y make
 ```
-Other solusion install different version NodeJS, maybe versio 16 is fine.
+### Other solusion install different version NodeJS, maybe versio 16 is fine.
+### If still not fix then try to remove package-lock.json and node_modules in the directory
