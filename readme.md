@@ -27,11 +27,3 @@ SUBSYSTEM=="tty", ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6001", SYMLINK+="m
 ```
 Restart your Raspberry Pi or unplug the USB and reinsert it. There should now be a /dev/myUSB entry that you can use the same way you would the ttyUSB# entry.
 
-## Ubuntu failed to install because make is not foud
-Solustion install make
-```sh
-$ sudo apt-get update
-$ sudo apt-get install -y make
-```
-### Other solusion install different version NodeJS, maybe versio 16 is fine.
-### If still not fix then try to remove package-lock.json and node_modules in the directory
