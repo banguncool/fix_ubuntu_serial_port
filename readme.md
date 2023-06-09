@@ -25,5 +25,14 @@ Copy/paste the line below into the file and save it:
 ```
 SUBSYSTEM=="tty", ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6001", SYMLINK+="myUSB"
 ```
+
+Don't forget to set user that can access myUSB
+
+```
+sudo usermod -a -G dialout $USER
+```
+
+change $USER with username on the computer
+
 Restart your Raspberry Pi or unplug the USB and reinsert it. There should now be a /dev/myUSB entry that you can use the same way you would the ttyUSB# entry.
 
